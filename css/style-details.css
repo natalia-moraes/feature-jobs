@@ -73,14 +73,14 @@ ul li {
 
 .header {
     width: 100%;
-    background-image: url("../images/bg_vagas.png");
+    background-image: url("../images/common/bg_vagas.png");
     background-repeat: no-repeat;
     background-size:
     cover;
     background-position: center;
     color: #ffffff;
     padding-top: 100px;
-    height: 560px;
+    height: 390px;
     /*font-size: 20px;*/
     font-weight: 300;
     line-height: 30px;
@@ -116,12 +116,12 @@ ul li {
 }
 
 .job-location::before {
-    content: url("location.svg");
+    content: url("../images/details/path.svg");
 
 }
 
 .job-mode::before {
-    content: url("coffee.svg");
+    content: url("../images/details/mail-outline.svg");
 }
 
 .job-location::before, .job-mode::before {
@@ -146,10 +146,23 @@ ul li {
     
 }
 
+/*********** OUR STORY *********/
+.gptw-img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.container-gptw {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /********* APPLY ****************/
 
-.apply {margin-top: 20px;
+.apply {
+    margin-top: 20px;
 }
 
 .apply .container {
@@ -190,30 +203,6 @@ ul li {
     margin: 10px 0 60px;
 }
 
-.gptw {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    background-color: #e8e8e8;
-    border-radius: 4px;
-    padding: 40px 20px;
-}
-
-.gptw-info p{
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #1a9ca6;
-    padding: 40px 0px 40px 0px;
-}
-
-.gptw-img {
-    align-self: center;
-}
-
-.gptw-img img {
-        margin-bottom: 20px;
-    }
 
 @media (min-width: 1350px){
     div.jumbotron {
@@ -233,7 +222,6 @@ ul li {
     .content .container {
         width: 90%;
         padding: 40px 20px;
-        margin-top: -64px;
     }
     .apply .container {
         width: 90%;
@@ -241,19 +229,6 @@ ul li {
     }
     .apply .container .ipipefy {
         width: 90%;
-}
-.gptw {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 20px;
-    }
-    .gptw-info p{
-        font-size: 20px;
-        line-height: 28px;
-        font-weight: 700;
-        color: #1a9ca6;
-        padding: 40px 0px 40px 0px;
     }
 }
 
@@ -269,49 +244,21 @@ ul li {
     .apply .container .ipipefy {
         width: 90%;
     }
-    .gptw {
+    .container-gptw {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 20px;
-    }
-    .gptw-info p{
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 700;
-        color: #1a9ca6;
-        padding: 40px 0px 40px 0px;
     }
 }
 
 @media (max-width: 540px) {
-    .header h1 {
-        font-size: 30px;
-    }
-
-    .content .container {
-        margin-top: -60px;
-    }
-
-    .content {
-        margin-top: 0;
-    }
-
     .button {
         width: 100%;
         padding: 20px;
     }
-    .gptw {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 20px;
-    }
-    .gptw-info p{
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: 700;
-        color: #1a9ca6;
-        padding: 40px 0px 40px 0px;
+}
+
+@media (max-width: 370px) {
+    .header h1 {
+        font-size: 30px;
     }
 }
