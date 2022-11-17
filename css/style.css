@@ -56,7 +56,7 @@ hr {
 }
 
 .header-title {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -67,7 +67,7 @@ hr {
     margin: 0 10px;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 600px) {
     .header-title {
         font-size: 60px;
     }
@@ -82,10 +82,8 @@ hr {
 /* careers */
 .careers {
     background: var(--bg-careers);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 40px 0;
+    text-align: center;
 }
 
 .careers h3 {
@@ -111,20 +109,13 @@ hr {
 }
 
 .careers-position {
-    max-width: 968px;
-    padding: 20px 0;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 0 10px;
+    margin: 0 auto;
+    max-width: 968px;
 }
-
-/*nati*/
-/* @media(min-width: 980px) {
-    .careers-position {
-        grid-template-columns: repeat(3, 300px);
-    }
-} */
 
 .careers-position-list {
     background: white;
