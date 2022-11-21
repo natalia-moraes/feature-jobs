@@ -67,3 +67,10 @@
     font-weight: 700;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Prometo Regular';
+    src: url('../fonts/Prometo-Regular.otf');
+    font-weight: 300;
+    font-style: normal;
+}

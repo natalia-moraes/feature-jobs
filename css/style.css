@@ -7,6 +7,7 @@
     --title-about: #f0775f;
     --main-font: Roboto;
     --bg-careers: #f5f5f5;
+    --text-primary: #000;
 }
 
 
@@ -15,7 +16,7 @@ body, p, h1, h2, h3, h5, ul, li, a, span {
     margin: 0px;
     padding: 0px;
     font-family: 'Prometo', sans-serif !important;
-    font-weight:lighter;
+    font-weight: lighter;
     box-sizing: border-box;
 }
 
@@ -57,7 +58,7 @@ hr {
 
 .header-title {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .header-subtitle {
@@ -86,26 +87,32 @@ hr {
     text-align: center;
 }
 
+.careers h1, h2, h3, ul, li, a, span {
+    font-family: 'Prometo Regular' !important;
+    font-weight: 300 !important;
+}
+
+
 .careers h3 {
-    font-weight: 500;
     color: #212121;
     font-size: 35px;
 }
 
 .careers p {
     font-size: 18px;
-    margin: 10px auto;
+    margin: 15px auto;
     line-height: 20px;
     padding: 0 30px;
     color: #666;
+    font-weight: 500;
+    font-family: 'Prometo Regular', sans-serif !important;
 }
 
 .careers .careers-no {
     font-size: 18px;
-    font-weight: 500;
     color: #666;
     padding: 15px;
-    height: 150px;
+    height: 80px;
 }
 
 .careers-position {
@@ -142,6 +149,7 @@ hr {
     line-height: 1.3;
     display: flex;
     flex-wrap: wrap;
+    color: #333;
 }
 
 .list-btn {
@@ -151,12 +159,11 @@ hr {
     font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
-    text-align: center;
-}
-
-.list-btn a{
     color: white;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 @media(min-width: 700px) {
@@ -213,6 +220,7 @@ hr {
     font-size: 18px;
     line-height: 1.44;
     margin: 25px 25px 25px 0;
+    color: var(--text-primary);
 }
 
 .our-story-span {
@@ -263,8 +271,8 @@ hr {
 }
 
 .our-story-three img {
-    width: 160px;
-    height: 190px;
+    width: 220px;
+    height: 320px;
 }
 
 .our-story-four {
@@ -284,6 +292,7 @@ hr {
 
 .our-story-sub-gptw {
     line-height: 1.44;
+    color: var(--text-primary);
 }
 
 .our-story-four-list {
@@ -372,6 +381,7 @@ hr {
 
 .footer-address ul li {
     line-height: 1.5;
+    font-family: 'Prometo', sans-serif !important;
     font-size: 14px;
     color: var(--title-color);
 }
