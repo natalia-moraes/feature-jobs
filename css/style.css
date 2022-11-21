@@ -238,7 +238,7 @@ hr {
 }
 
 .our-story-two-list {
-    line-height: 3;
+    line-height: 2;
     padding: 30px;
     margin-left: 10px;
 }
@@ -249,8 +249,7 @@ hr {
 
 .our-story-two-list li::marker, .our-story-four-list li::marker {
     color: #1a9ca6;
-    width: 12px;
-    height: 12px;
+    font-size: 30px;
 }
 
 /**/
@@ -296,8 +295,8 @@ hr {
 }
 
 .our-story-four-list {
-    line-height: 2;
-    padding: 20px 30px;
+    line-height: 1.5;
+    padding: 10px 30px;
     margin-left: 10px;
 }
 
@@ -321,10 +320,6 @@ hr {
         height: 320px;
     }
 
-    .our-story-two-list {
-        line-height: 2;
-    }
-
     .our-story-two {
         background: none;
     }
@@ -340,12 +335,6 @@ hr {
 
     .our-story-title-gptw, .our-story-sub-gptw {
         padding-left: 20px;
-    }
-}
-
-@media (min-width: 968px) {
-    .our-story-two-list {
-        line-height: 3;
     }
 }
 
